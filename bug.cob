@@ -1,0 +1,16 @@
+01  WS-DATA-AREA. 
+    05  WS-NUMBER PIC 9(5) VALUE 99999. 
+    05  WS-AMOUNT PIC 9(7)V99 VALUE 99999.99. 
+
+       PROCEDURE DIVISION.
+           ADD 1 TO WS-NUMBER
+           IF WS-NUMBER > 99999 THEN 
+               DISPLAY "NUMBER EXCEEDS THE LIMIT" 
+           END-IF
+           DISPLAY WS-NUMBER
+           ADD 1 TO WS-AMOUNT
+           IF WS-AMOUNT > 9999999.99 THEN 
+               DISPLAY "AMOUNT EXCEEDS THE LIMIT" 
+           END-IF
+           DISPLAY WS-AMOUNT
+           STOP RUN.
