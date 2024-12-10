@@ -1,0 +1,1 @@
+This example demonstrates a common but subtle error in COBOL programs related to numeric overflow.  The program attempts to increment a numeric field beyond its defined limits without explicit overflow handling.  The solution showcases how to properly check and handle such scenarios to avoid unexpected behavior or program termination.
